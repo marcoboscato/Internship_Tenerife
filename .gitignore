@@ -163,5 +163,4 @@ cython_debug/
 
 # ignore this folders
 Papers/
-Data/
 Libraries/
