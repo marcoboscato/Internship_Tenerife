@@ -1,0 +1,18 @@
+SELECT g.source_id, g.ra, g.ra_error, g.dec, g.dec_error, g.parallax,
+g.parallax_error, g.parallax_over_error, g.pmra,g.pmra_error,
+g.pmdec,g.pmdec_error, g.parallax_pmra_corr, g.parallax_pmdec_corr,
+g.pmra_pmdec_corr, g.astrometric_n_good_obs_al,
+g.astrometric_excess_noise, g.astrometric_excess_noise_sig,
+g.astrometric_params_solved, g.visibility_periods_used,
+g.duplicated_source, g.phot_g_mean_flux_error,
+g.phot_g_mean_flux_over_error, g.phot_g_mean_mag,
+g.phot_bp_mean_flux_over_error, g.phot_bp_mean_mag,
+g.phot_rp_mean_flux_error, g.phot_rp_mean_flux_over_error,
+g.phot_rp_mean_mag, g.phot_bp_rp_excess_factor, g.bp_rp,g.l, g.b,
+g.ruwe, g.ipd_gof_harmonic_amplitude, g.ipd_frac_multi_peak
+FROM gaiaedr3.gaia_source AS g
+WHERE
+CONTAINS(
+  POINT('ICRS', ra, dec),
+  CIRCLE('ICRS', 153.26250, -1.61472, 4)
+) = 1;
