@@ -1,0 +1,2 @@
+# PM_RA	PM_DEC	Q	V_MW	D_MW	ePM_RA_d	ePM_DEC_d	eQ_d	eV_MW_d	eD_MWd	ePM_RA_u	ePM_DEC_u	eQ_u	eV_MW_u	eD_MWu	lnZ	C
+ -0.403   0.030   0.046  71.544  74.373  -0.008  -0.008  -0.001  -4.612  -3.112   0.008   0.008   0.001   4.379   3.379 -645412.454  -0.319
